@@ -3,7 +3,7 @@ from account import Account # importing the class account
 
 class TestAccount(unittest.TestCase):
     def setUp(self):
-        self.new_account = Account("clinton","Facebook","232323","clin@g.com") #created account object
+        self.new_account = Account("Mariga","insta","12345","johnmariga8@gmail.com") #created account object
 
     def test_init(self):
         """
