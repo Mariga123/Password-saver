@@ -22,7 +22,7 @@ class Account:
         """
         
         Account.account_list.remove(self) 
-        @classmethod
+    @classmethod
     def find_by_name(cls,name):
         for account in cls.account_list:
             if account.account_name == name:
@@ -48,3 +48,10 @@ class Account:
         method that returns the account list
         '''
         return cls.account_list        
+
+
+
+
+
+if __name__ == "__main__":
+    unittest.main()
