@@ -9,3 +9,16 @@ class Credentials:
         self.name = name
         self.password = password
         self.email = email
+
+    
+    def save_credentials(self):
+        """
+        Method to save credential objects into credentials list
+        """  
+        Credentials.credentials_list.append(self)
+
+    def delete_credentials(self):
+        """
+        A method that deletes credentials from the list
+        """
+        Credentials.credentials_list.remove(self)
